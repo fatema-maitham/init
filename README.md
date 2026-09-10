@@ -1,3 +1,5 @@
+## User Stories
+
 ### Guest User Stories
 
 * As a guest, I can view the home page explaining what the camping store offers.
@@ -36,3 +38,14 @@
 * As an admin, I can view all customer orders.
 * As an admin, I can update an order's status.
 * As an admin, I can delete an order.
+
+---
+
+## Routes
+
+---
+
+## Component Hierarchy
+
+
+
