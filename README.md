@@ -41,6 +41,14 @@
 
 ---
 
+## ERD
+
+---
+
+## Wireframes
+
+---
+
 ## Routes
 
 ### Auth Routes
@@ -107,7 +115,6 @@
 
 ---
 
-## Component Hierarchy
+## Component Hierarchy Diagram
 
-
-
+![Component Hierarchy Diagram](./plan/component-hierarchy.png)
