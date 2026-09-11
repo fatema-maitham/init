@@ -43,6 +43,68 @@
 
 ## Routes
 
+### Auth Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**        | **Use Case**                     |
+| --------------- | -------------- | -----------: | -------------- | -------------------------------- |
+| POST            | signup         |          201 | `/auth/signup` | Create a new user account        |
+| POST            | login          |          200 | `/auth/login`  | Login with username and password |
+
+### User Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**          | **Use Case**             |
+| --------------- | -------------- | -----------: | ---------------- | ------------------------ |
+| GET             | getUser        |          200 | `/users/profile` | Get current user profile |
+| PUT             | updateUser     |          200 | `/users/profile` | Update user profile      |
+| DELETE          | deleteUser     |          200 | `/users/profile` | Delete user account      |
+
+### Product Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**                | **Use Case**                 |
+| --------------- | -------------- | -----------: | ---------------------- | ---------------------------- |
+| POST            | createProduct  |          201 | `/products`            | Create a new camping product |
+| GET             | getProducts    |          200 | `/products`            | List all camping products    |
+| GET             | showProduct    |          200 | `/products/:productId` | Get a single product         |
+| PUT             | updateProduct  |          200 | `/products/:productId` | Update a product             |
+| DELETE          | deleteProduct  |          200 | `/products/:productId` | Delete a product             |
+
+### Category Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**                   | **Use Case**          |
+| --------------- | -------------- | -----------: | ------------------------- | --------------------- |
+| POST            | createCategory |          201 | `/categories`             | Create a new category |
+| GET             | getCategories  |          200 | `/categories`             | List all categories   |
+| GET             | showCategory   |          200 | `/categories/:categoryId` | Get a single category |
+| PUT             | updateCategory |          200 | `/categories/:categoryId` | Update a category     |
+| DELETE          | deleteCategory |          200 | `/categories/:categoryId` | Delete a category     |
+
+### Cart Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**            | **Use Case**               |
+| --------------- | -------------- | -----------: | ------------------ | -------------------------- |
+| POST            | addToCart      |          201 | `/cart`            | Add a product to cart      |
+| GET             | getCart        |          200 | `/cart`            | Get current user's cart    |
+| PUT             | updateCart     |          200 | `/cart/:productId` | Update product quantity    |
+| DELETE          | removeFromCart |          200 | `/cart/:productId` | Remove a product from cart |
+
+### Order Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**                   | **Use Case**                |
+| --------------- | -------------- | -----------: | ------------------------- | --------------------------- |
+| POST            | createOrder    |          201 | `/orders`                 | Place a new order           |
+| GET             | getOrders      |          200 | `/orders`                 | List user's previous orders |
+| GET             | showOrder      |          200 | `/orders/:orderId`        | Get a single order          |
+| PUT             | cancelOrder    |          200 | `/orders/:orderId/cancel` | Cancel an unprocessed order |
+
+### Admin Routes
+
+| **HTTP Method** | **Controller** | **Response** | **URI**                  | **Use Case**             |
+| --------------- | -------------- | -----------: | ------------------------ | ------------------------ |
+| GET             | dashboard      |          200 | `/admin/dashboard`       | View order statistics    |
+| GET             | getAllOrders   |          200 | `/admin/orders`          | List all customer orders |
+| PUT             | updateOrder    |          200 | `/admin/orders/:orderId` | Update an order's status |
+| DELETE          | deleteOrder    |          200 | `/admin/orders/:orderId` | Delete an order          |
+
 ---
 
 ## Component Hierarchy
